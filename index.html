@@ -19,9 +19,9 @@
     <!-- header section starts  -->
 
     <header>
-
+        
         <div id="menu-bars" class="fas fa-bars"></div>
-
+        <div id="day-night-toggle" class="fas fa-sun"></div>
         <nav class="navbar">
             <a href="#home">home</a>
             <a href="#about">about</a>
@@ -379,6 +379,7 @@
     <!-- particles.js links  -->
     <script src="script.js"></script>
     <script src="app.js"></script>
+    <script src="alart.js"></script>
 
     <!-- vanilla-tilt.js link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
@@ -407,6 +408,22 @@
     VanillaTilt.init(document.querySelectorAll('.tilt'),{
         max:25
     });
+    
+    const toggleButton = document.querySelector('#day-night-toggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('night-mode');
+        toggleButton.classList.toggle('fa-sun');
+        toggleButton.classList.toggle('fa-moon');
+    });
+
+    // Set the initial icon based on the mode
+    if (body.classList.contains('night-mode')) {
+        toggleButton.classList.add('fa-moon');
+    } else {
+        toggleButton.classList.add('fa-sun');
+    }
 
     </script>
 

@@ -3,7 +3,38 @@
     :root{
         --green:#27ae60;
     }
-
+    :root {
+        --bg-color-day: #ffffff;
+        --text-color-day: #000000;
+        --bg-color-night: #121212;
+        --text-color-night: #ffffff;
+    }
+    
+    body {
+        background-color: var(--bg-color-day);
+        color: var(--text-color-day);
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    body.night-mode {
+        background-color: var(--bg-color-night);
+        color: var(--text-color-night);
+    }
+    
+    #day-night-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 24px;
+        z-index: 1000;
+    }
+    
+    body.night-mode #day-night-toggle {
+        color: var(--text-color-night);
+    }
+    
+    
     *{
         font-family: 'Nunito', sans-serif;
         margin:0; padding:0;
