@@ -480,15 +480,7 @@
     box-shadow: 0 0 20px rgba(45, 167, 70, 0.15);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about .about-content .personal-info, 
-    .about .about-content .skils, 
-    .about .about-content .education, 
-    .about .about-content .experience {
-        width: 100%;
-    }
-}
+
 
 
     .services .box-container{
