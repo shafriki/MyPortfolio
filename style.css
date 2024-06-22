@@ -122,8 +122,9 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background:#fff;
+        background:#000000;
         z-index: 1000;
+        
     }
 
     header .navbar{
@@ -134,7 +135,7 @@
     header .navbar a{
         padding:1.5rem;
         font-size: 2rem;
-        color:#222;
+        color:#ffffff;
     }
 
     header .navbar a:hover{
