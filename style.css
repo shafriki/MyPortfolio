@@ -381,7 +381,6 @@
 .about .about-content .timeline .timeline-item:last-child
 {
     padding-bottom: 0;
-    color: #fff9;
 
 }
 .about .about-content .timeline .timeline-item::before
