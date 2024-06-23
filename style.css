@@ -122,7 +122,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background:#000000;
+        background:#2a6e03;
         z-index: 1000;
         
     }
@@ -139,7 +139,7 @@
     }
 
     header .navbar a:hover{
-        color:var(--green);
+        color: goldenrod;
     }
 
     #menu-bars{
@@ -148,7 +148,7 @@
         top:1rem; left:1rem;
         padding:1rem 1.5rem;
         border-radius: .5rem;
-        color:#fff;
+        color: whitesmoke;
         background: var(--green);
         cursor: pointer;
         font-size: 3rem;
@@ -223,6 +223,7 @@
     --bg-black-900: #000;
 }
 /*about*/
+
 .about .about-content
 {
     flex: 0 0 100%;
@@ -355,7 +356,7 @@
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
-    color: var(--bg-black-900);
+    color: var(--text-black-700);
 }
 .about .about-content .timeline-box
 {
@@ -380,6 +381,7 @@
 .about .about-content .timeline .timeline-item:last-child
 {
     padding-bottom: 0;
+    color: #fff9;
 
 }
 .about .about-content .timeline .timeline-item::before
